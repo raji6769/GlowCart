@@ -16,7 +16,7 @@ const products = {
         discount: "20% OFF",
         rating: "4.5",
         ratingsCount: "120+ ratings",
-        image: "image/lipstick.jpg",
+        image: "lipstick.jpg",
         description:
             "A smooth and comfortable matte lipstick designed to give your lips rich colour with a beautiful long-lasting finish."
     },
@@ -29,7 +29,7 @@ const products = {
         discount: "15% OFF",
         rating: "4.6",
         ratingsCount: "150+ ratings",
-        image: "image/serum.jpg",
+        image: "serum.jpg",
         description:
             "A lightweight face serum designed to give your skin a fresh, hydrated and healthy-looking glow."
     },
@@ -42,7 +42,7 @@ const products = {
         discount: "10% OFF",
         rating: "4.4",
         ratingsCount: "100+ ratings",
-        image: "image/facewash.jpg",
+        image: "facewash.jpg",
         description:
             "A gentle daily face wash that helps remove dirt and excess oil while keeping your skin feeling fresh and clean."
     },
@@ -55,7 +55,7 @@ const products = {
         discount: "25% OFF",
         rating: "4.7",
         ratingsCount: "180+ ratings",
-        image: "image/haircare.jpg",
+        image: "haircare.jpg",
         description:
             "A complete hair care kit designed for an easy everyday hair care routine and healthy-looking hair."
     }
