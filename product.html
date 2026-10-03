@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product | GlowCart</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            GlowCart
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#products">Shop</a>
+            <a href="index.html#offer">Offers</a>
+            <a href="signin.html">Sign In</a>
+        </nav>
+
+        <div class="icons">
+
+            <button class="icon-button" onclick="window.location.href='index.html'">
+                🛍
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PRODUCT DETAILS ================= -->
+
+    <main class="product-details">
+
+        <div class="product-detail-image">
+
+            <img
+                id="productImage"
+                src="image/lipstick.jpg"
+                alt="Matte Lipstick"
+            >
+
+            <span class="detail-discount" id="productDiscount">
+    20% OFF
+</span>
+
+        </div>
+
+
+        <div class="product-detail-content">
+
+            <p class="detail-category" id="productCategory">
+                MAKEUP
+            </p>
+
+            <h1 id="productName">
+                Matte Lipstick
+            </h1>
+
+            <div class="detail-rating">
+
+    ⭐ <span id="productRating">4.5</span>
+
+    <span>•</span>
+
+    <span id="productRatingsCount">
+        120+ ratings
+    </span>
+
+</div>
+
+
+            <div class="detail-price">
+
+                <span id="productPrice">
+                    ₹499
+                </span>
+
+               <span class="detail-old-price" id="productOldPrice">
+    ₹625
+</span>
+
+            </div>
+
+
+          <p class="detail-description" id="productDescription">
+    A smooth and comfortable matte lipstick
+    designed to give your lips rich colour
+    with a beautiful long-lasting finish.
+</p>
+
+            <div class="quantity-section">
+
+                <p>Quantity</p>
+
+                <div class="quantity-control">
+
+                    <button id="decrease">
+                        −
+                    </button>
+
+                    <span id="quantity">
+                        1
+                    </span>
+
+                    <button id="increase">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-actions">
+
+                <button id="addToBag" class="add-bag">
+                    🛍 Add to Bag
+                </button>
+
+                <button id="buyNow" class="buy-now">
+                    Buy Now
+                </button>
+
+            </div>
+
+
+            <button id="detailWishlist" class="detail-wishlist">
+                ♡ Add to Wishlist
+            </button>
+
+
+            <div class="product-features">
+
+                <div>
+                    <strong>✓</strong>
+                    <span>Secure packaging</span>
+                </div>
+
+                <div>
+                    <strong>✓</strong>
+                    <span>Easy returns</span>
+                </div>
+
+                <div>
+                    <strong>✓</strong>
+                    <span>Fast delivery</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= YOU MAY ALSO LIKE ================= -->
+
+    <section class="related-products">
+
+        <div class="section-heading">
+
+            <p>
+                YOU MAY ALSO LIKE
+            </p>
+
+            <h2>
+                More Beauty Picks
+            </h2>
+
+        </div>
+
+
+        <div class="related-container">
+
+            <div class="related-card">
+
+                <img
+                    src="image/serum.jpg"
+                    alt="Glow Face Serum"
+                >
+
+                <h3>
+                    Glow Face Serum
+                </h3>
+
+                <p>
+                    ₹699
+                </p>
+
+                <button onclick="window.location.href='product.html'">
+                    View Product
+                </button>
+
+            </div>
+
+
+            <div class="related-card">
+
+                <img
+                    src="image/facewash.jpg"
+                    alt="Gentle Face Wash"
+                >
+
+                <h3>
+                    Gentle Face Wash
+                </h3>
+
+                <p>
+                    ₹349
+                </p>
+
+                <button onclick="window.location.href='product.html'">
+                    View Product
+                </button>
+
+            </div>
+
+
+            <div class="related-card">
+
+                <img
+                    src="image/haircare.jpg"
+                    alt="Hair Care Kit"
+                >
+
+                <h3>
+                    Hair Care Kit
+                </h3>
+
+                <p>
+                    ₹799
+                </p>
+
+                <button onclick="window.location.href='product.html'">
+                    View Product
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="product.js"></script>
+
+</body>
+
+</html>

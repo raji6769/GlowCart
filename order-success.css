@@ -1,0 +1,888 @@
+/* =========================================================
+   GLOWCART — PREMIUM ORDER SUCCESS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f1ee;
+    color: #211b1c;
+}
+
+
+/* =========================================================
+   MAIN PAGE
+   ========================================================= */
+
+.success-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 35px;
+
+    background:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(221, 174, 184, 0.35),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(224, 201, 191, 0.4),
+            transparent 32%
+        ),
+        #f8f1ee;
+}
+
+
+/* =========================================================
+   SUCCESS CONTAINER
+   ========================================================= */
+
+.success-card {
+    width: min(1050px, 100%);
+
+    min-height: 650px;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #eadedb;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 30px 80px rgba(52, 28, 30, 0.13);
+}
+
+
+/* =========================================================
+   LEFT BRAND PANEL
+   ========================================================= */
+
+.success-brand {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 55px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(220, 158, 173, 0.35),
+            transparent 30%
+        ),
+        #211b1c;
+
+    color: white;
+}
+
+
+/* =========================================================
+   DECORATIVE CIRCLES
+   ========================================================= */
+
+.success-brand::before {
+    content: "";
+
+    position: absolute;
+
+    width: 330px;
+    height: 330px;
+
+    right: -130px;
+    top: 80px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 50%;
+}
+
+.success-brand::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    left: -130px;
+    bottom: -80px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.brand-top {
+    position: relative;
+    z-index: 2;
+}
+
+.success-brand h1 {
+    font-size: 38px;
+
+    letter-spacing: -1.5px;
+
+    font-weight: 800;
+}
+
+.success-brand > .brand-top p {
+    margin-top: 7px;
+
+    color: #d8c8ca;
+
+    font-size: 12px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   BRAND MESSAGE
+   ========================================================= */
+
+.brand-message {
+    position: relative;
+    z-index: 2;
+
+    max-width: 390px;
+}
+
+.brand-message .small-text {
+    margin-bottom: 15px;
+
+    color: #e6aab8;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.brand-message h2 {
+    font-size: clamp(38px, 4vw, 58px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+}
+
+.brand-message h2 span {
+    color: #e5a7b5;
+}
+
+.brand-message p {
+    margin-top: 20px;
+
+    max-width: 330px;
+
+    color: #c8babb;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   BRAND BOTTOM
+   ========================================================= */
+
+.brand-bottom {
+    position: relative;
+    z-index: 2;
+
+    color: #a9989a;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   RIGHT SUCCESS CONTENT
+   ========================================================= */
+
+.success-content {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 45px 65px;
+
+    background: #fffdfc;
+
+    overflow-y: auto;
+}
+
+
+/* =========================================================
+   SUCCESS ICON
+   ========================================================= */
+
+.success-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 14px;
+
+    border-radius: 50%;
+
+    background: #edf8f0;
+
+    border: 1px solid #cce8d3;
+
+    color: #287542;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 20px rgba(40, 117, 66, 0.08);
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.success-label {
+    margin-bottom: 6px;
+
+    color: #a84c62;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.success-content > h1 {
+    color: #211b1c;
+
+    font-size: 30px;
+
+    letter-spacing: -1px;
+
+    line-height: 1.1;
+}
+
+.success-message {
+    margin-top: 8px;
+
+    max-width: 500px;
+
+    color: #817273;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ORDER ID
+   ========================================================= */
+
+.order-id-box {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 18px;
+
+    padding: 12px 15px;
+
+    border: 1px solid #eadedb;
+
+    border-radius: 11px;
+
+    background: #faf5f3;
+}
+
+.order-id-box span {
+    color: #817273;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+.order-id-box strong {
+    color: #a84c62;
+
+    font-size: 12px;
+}
+
+/* =========================================================
+   ORDER DETAILS — PREMIUM
+   ========================================================= */
+
+.success-details {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+.detail-item {
+    min-width: 0;
+
+    padding: 11px 10px;
+
+    border: 1px solid #eadedb;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #faf6f4
+        );
+
+    transition: 0.25s ease;
+}
+
+.detail-item:hover {
+    border-color: #d5b9bf;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(52, 28, 30, 0.06);
+}
+
+.detail-item span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #968889;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+.detail-item strong {
+    display: block;
+
+    color: #332a2b;
+
+    font-size: 11px;
+
+    line-height: 1.3;
+
+    word-break: break-word;
+}
+
+
+/* TOTAL HIGHLIGHT */
+
+.detail-item:nth-child(3) {
+    background: #211b1c;
+
+    border-color: #211b1c;
+}
+
+.detail-item:nth-child(3) span {
+    color: #bcaeb0;
+}
+
+.detail-item:nth-child(3) strong {
+    color: #ffffff;
+
+    font-size: 12px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    .success-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .success-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   ORDERED PRODUCTS
+   ========================================================= */
+
+.ordered-products {
+    margin-top: 16px;
+}
+
+.ordered-products h2 {
+    margin-bottom: 7px;
+
+    color: #211b1c;
+
+    font-size: 15px;
+}
+
+#orderedItems {
+    max-height: 125px;
+
+    overflow-y: auto;
+}
+
+.ordered-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 7px 0;
+
+    border-bottom: 1px solid #eee3e1;
+}
+
+.ordered-item img {
+    width: 38px;
+    height: 38px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+}
+
+.ordered-item-info {
+    flex: 1;
+}
+
+.ordered-item-info h3 {
+    margin: 0 0 2px;
+
+    color: #332a2b;
+
+    font-size: 11px;
+}
+
+.ordered-item-info p {
+    margin: 0;
+
+    color: #918384;
+
+    font-size: 9px;
+}
+
+.ordered-item-price {
+    color: #211b1c;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.success-actions {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.continue-button,
+.shop-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px;
+
+    border-radius: 11px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.continue-button {
+    background: #211b1c;
+
+    color: white;
+}
+
+.continue-button:hover {
+    background: #a84c62;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(168, 76, 98, 0.2);
+}
+
+.shop-button {
+    border: 1px solid #dfd2cf;
+
+    background: white;
+
+    color: #3d3334;
+}
+
+.shop-button:hover {
+    border-color: #a84c62;
+
+    color: #a84c62;
+
+    background: #faf5f3;
+}
+
+
+/* =========================================================
+   THANK YOU
+   ========================================================= */
+
+.thank-you {
+    margin-top: 13px;
+
+    color: #a09696;
+
+    text-align: center;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .success-card {
+        grid-template-columns: 1fr;
+
+        max-width: 520px;
+    }
+
+    .success-brand {
+        min-height: 260px;
+
+        padding: 35px;
+    }
+
+    .brand-message {
+        margin-top: 50px;
+    }
+
+    .brand-message h2 {
+        font-size: 42px;
+    }
+
+    .brand-bottom {
+        display: none;
+    }
+
+    .success-content {
+        padding: 45px 40px;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .success-page {
+        padding: 12px;
+    }
+
+    .success-card {
+        border-radius: 22px;
+    }
+
+    .success-brand {
+        padding: 30px;
+    }
+
+    .success-brand h1 {
+        font-size: 30px;
+    }
+
+    .brand-message h2 {
+        font-size: 38px;
+
+        letter-spacing: -2px;
+    }
+
+    .success-content {
+        padding: 35px 25px;
+    }
+
+    .success-content > h1 {
+        font-size: 27px;
+    }
+
+    .success-details {
+        grid-template-columns: 1fr;
+    }
+
+    .success-actions {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================================================
+   ORDER STATUS TIMELINE
+   ========================================================= */
+
+.order-status {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.order-status h2 {
+    margin-bottom: 10px;
+    color: #211b1c;
+    font-size: 15px;
+}
+
+
+/* STATUS BOX */
+
+.status-timeline {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0;
+
+    padding: 13px 12px;
+
+    border: 1px solid #eee3e1;
+    border-radius: 12px;
+
+    background: #faf5f3;
+
+    overflow: hidden;
+}
+
+
+/* STATUS STEP */
+
+.status-step {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    flex: 1;
+    min-width: 0;
+
+    position: relative;
+}
+
+
+/* STATUS DOT */
+
+.status-dot {
+    width: 25px;
+    height: 25px;
+
+    flex: 0 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 1px solid #d8cecc;
+
+    color: #958889;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* ACTIVE */
+
+.status-step.active .status-dot {
+    background: #211b1c;
+    border-color: #211b1c;
+    color: #ffffff;
+}
+
+
+/* STATUS TEXT */
+
+.status-info {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.status-info strong {
+    display: block;
+
+    color: #332a2b;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.status-info span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #968889;
+
+    font-size: 7px;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* CONNECTING LINE */
+
+.status-line {
+    width: 20px;
+    height: 1px;
+
+    flex: 0 0 20px;
+
+    margin: 0 5px;
+
+    background: #ded4d2;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .status-timeline {
+        overflow-x: auto;
+    }
+
+    .status-step {
+        flex: 0 0 auto;
+    }
+
+    .status-line {
+        flex: 0 0 20px;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .status-timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+
+        overflow: hidden;
+    }
+
+    .status-step {
+        width: 100%;
+        flex: none;
+    }
+
+    .status-line {
+        width: 1px;
+        height: 14px;
+
+        flex: none;
+
+        margin: 2px 0 2px 12px;
+    }
+
+}

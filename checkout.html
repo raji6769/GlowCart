@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Checkout | GlowCart</title>
+
+    <link rel="stylesheet" href="checkout.css">
+
+</head>
+
+
+<body>
+
+
+    <main class="checkout-page">
+
+
+        <section class="checkout-card">
+
+
+            <!-- =================================================
+                 LEFT BRAND PANEL
+                 ================================================= -->
+
+            <div class="checkout-brand">
+
+
+                <div class="brand-top">
+
+                    <h1>
+                        GlowCart
+                    </h1>
+
+                    <p>
+                        BEAUTY & SKINCARE
+                    </p>
+
+                </div>
+
+
+                <div class="brand-message">
+
+                    <div class="small-text">
+                        COMPLETE YOUR ORDER
+                    </div>
+
+                    <h2>
+                        Your beauty journey
+                        <span>is almost complete.</span>
+                    </h2>
+
+                    <p>
+                        Review your products, add your delivery
+                        details and choose your preferred payment
+                        method.
+                    </p>
+
+                </div>
+
+
+                <div class="brand-bottom">
+
+                    <span>
+                        ✦ Thank you for shopping with GlowCart
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 RIGHT CHECKOUT CONTENT
+                 ================================================= -->
+
+            <div class="checkout-content">
+
+
+                <h2>
+                    Checkout
+                </h2>
+
+                <p class="checkout-subtitle">
+                    Complete your order securely
+                </p>
+
+
+                <!-- =================================================
+                     DELIVERY DETAILS
+                     ================================================= -->
+
+                <section class="checkout-section">
+
+                    <h3>
+                        Delivery Details
+                    </h3>
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="Enter your full name"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="Enter your phone number"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            Delivery Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            rows="3"
+                            placeholder="Enter your complete address"
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                placeholder="Enter city"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="pincode">
+                                PIN Code
+                            </label>
+
+                            <input
+                                type="text"
+                                id="pincode"
+                                placeholder="6-digit PIN"
+                                maxlength="6"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     PAYMENT
+                     ================================================= -->
+
+                <section class="checkout-section">
+
+                    <h3>
+                        Payment Method
+                    </h3>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="cod"
+                            checked
+                        >
+
+                        <span>
+                            💵 Cash on Delivery
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="upi"
+                        >
+
+                        <span>
+                            📱 UPI
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="card"
+                        >
+
+                        <span>
+                            💳 Card
+                        </span>
+
+                    </label>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     ORDER SUMMARY
+                     ================================================= -->
+
+                <section class="checkout-section order-summary">
+
+                    <h3>
+                        Order Summary
+                    </h3>
+
+
+                    <div id="checkoutItems">
+                        <!-- Products appear here -->
+                    </div>
+
+
+                    <div class="summary-line">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="subtotal">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-line">
+
+                        <span>
+                            Delivery
+                        </span>
+
+                        <strong id="delivery">
+                            FREE
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="checkoutTotal">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        id="placeOrder"
+                        class="place-order-button"
+                    >
+                        Place Order
+                    </button>
+
+
+                    <p class="secure-text">
+                        🔒 Your information is securely handled
+                    </p>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     BACK
+                     ================================================= -->
+
+                <a
+                    href="index.html"
+                    class="back-store"
+                >
+                    ← Back to GlowCart
+                </a>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="checkout.js"></script>
+
+</body>
+
+</html>

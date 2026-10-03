@@ -1,0 +1,730 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+    <title>GlowCart - Beauty & Skincare</title> 
+ 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+ 
+<body> 
+ 
+    <!-- ================= HEADER ================= --> 
+ 
+    <header class="header"> 
+ 
+        <div class="logo"> 
+            GlowCart 
+        </div> 
+ 
+       <nav class="nav">
+    <a href="#home">Home</a>
+    <a href="#products">Shop</a>
+    <a href="#offer">Offers</a>
+    <span id="userGreeting" class="user-greeting"></span>
+     <a href="signin.html" id="signInLink">Sign In</a>
+    <a href="signup.html" id="signUpLink">Sign Up</a>
+    <button id="logoutButton" class="logout-button">Logout</button>
+</nav>
+ 
+        <div class="icons"> 
+ 
+    <button id="searchIcon" class="icon-button" aria-label="Search"> 
+        <span>⌕</span> 
+    </button> 
+ 
+    <button id="wishlistIcon" class="icon-button" aria-label="Wishlist"> 
+        <span>♡</span> 
+    </button> 
+ 
+    <button id="cartIcon" class="icon-button cart-icon" aria-label="Shopping Bag"> 
+        <span>🛍</span> 
+        <span class="cart-count">0</span> 
+    </button> 
+ 
+</div> 
+ 
+    </header> 
+ 
+ 
+    <!-- ================= SEARCH ================= --> 
+ 
+    <div id="searchBox" class="search-box"> 
+ 
+        <div class="search-row"> 
+ 
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search beauty products..." 
+            > 
+ 
+            <button id="closeSearch"> 
+                ✕ 
+            </button> 
+ 
+        </div> 
+ 
+        <div 
+            id="searchResults" 
+            class="search-results"> 
+        </div> 
+ 
+    </div> 
+ 
+ 
+    <!-- ================= HERO ================= --> 
+ 
+    <section id="home" class="hero"> 
+ 
+        <div class="hero-content"> 
+ 
+            <p class="hero-small"> 
+                BEAUTY THAT FEELS LIKE YOU 
+            </p> 
+ 
+            <h1> 
+                Discover Your 
+                <span>Glow</span> 
+            </h1> 
+ 
+            <p> 
+                Explore makeup, skincare, haircare and more 
+                from your favourite beauty brands. 
+            </p> 
+ 
+            <button class="shop-button"> 
+                Shop Now 
+            </button> 
+ 
+        </div> 
+ 
+    </section> 
+ 
+ 
+    <!-- ================= CATEGORIES ================= --> 
+ 
+    <section class="categories"> 
+ 
+        <div class="section-heading"> 
+ 
+            <p> 
+                SHOP BY CATEGORY 
+            </p> 
+ 
+            <h2> 
+                Find Your Beauty Essentials 
+            </h2> 
+ 
+        </div> 
+ 
+ 
+        <div class="category-container"> 
+ 
+ 
+            <div class="category-card" data-filter="makeup"> 
+ 
+                <div class="category-icon"> 
+                    💄 
+                </div> 
+ 
+                <h3> 
+                    Makeup 
+                </h3> 
+ 
+                <p> 
+                    Beauty & Makeup 
+                </p> 
+ 
+            </div> 
+ 
+ 
+            <div class="category-card" data-filter="skincare"> 
+ 
+                <div class="category-icon"> 
+                    🧴 
+                </div> 
+ 
+                <h3> 
+                    Skincare 
+                </h3> 
+ 
+                <p> 
+                    Care for your skin 
+                </p> 
+ 
+            </div> 
+ 
+ 
+            <div class="category-card" data-filter="haircare"> 
+ 
+                <div class="category-icon"> 
+                    💇‍♀️ 
+                </div> 
+ 
+                <h3> 
+                    Haircare 
+                </h3> 
+ 
+                <p> 
+                    Healthy beautiful hair 
+                </p> 
+ 
+            </div> 
+ 
+ 
+            <div class="category-card" data-filter="fragrance"> 
+ 
+                <div class="category-icon"> 
+                    🌸 
+                </div> 
+ 
+                <h3> 
+                    Fragrance 
+                </h3> 
+ 
+                <p> 
+                    Find your signature scent 
+                </p> 
+ 
+            </div> 
+ 
+ 
+        </div> 
+ 
+    </section> 
+ 
+ 
+    <!-- ================= PRODUCTS ================= --> 
+ 
+    <section id="products" class="products"> 
+ 
+        <div class="section-heading"> 
+ 
+            <p> 
+                TRENDING NOW 
+            </p> 
+ 
+            <h2> 
+                Best Beauty Picks 
+            </h2> 
+ 
+        </div> 
+ 
+ 
+        <div class="product-container"> 
+ 
+ 
+            <!-- PRODUCT 1 --> 
+ 
+            <div 
+                class="product-card" 
+                data-category="makeup" 
+                 onclick="window.location.href='product.html?id=lipstick'"
+      
+            > 
+ 
+                <div class="product-image"> 
+ 
+                    <img 
+                        class="product-emoji" 
+                        src="image/lipstick.jpg" 
+                        alt="Matte Lipstick" 
+                    > 
+ 
+                    <span class="discount"> 
+                        20% OFF 
+                    </span> 
+ 
+                    <button class="wishlist"> 
+                        ♡ 
+                    </button> 
+ 
+                </div> 
+ 
+ 
+                <p class="product-category"> 
+                    MAKEUP 
+                </p> 
+ 
+                <h3> 
+                    Matte Lipstick 
+                </h3> 
+               
+ 
+                <p class="rating"> 
+                    ⭐ 4.5 
+                </p> 
+ 
+ 
+                <div class="price"> 
+ 
+                    <span class="current-price"> 
+                        ₹499 
+                    </span> 
+ 
+                    <span class="old-price"> 
+                        ₹625 
+                    </span> 
+ 
+                </div> 
+ 
+ 
+                <button class="bag-button"> 
+                    Add to Bag 
+                </button> 
+ 
+            </div> 
+ 
+ 
+            <!-- PRODUCT 2 --> 
+ 
+            <div 
+                class="product-card" 
+                data-category="skincare" 
+                onclick="window.location.href='product.html?id=serum'"
+            > 
+ 
+                <div class="product-image"> 
+ 
+                    <img 
+                        class="product-emoji" 
+                        src="image/serum.jpg" 
+                        alt="Glow Face Serum" 
+                    > 
+ 
+                    <span class="discount"> 
+                        15% OFF 
+                    </span> 
+ 
+                    <button class="wishlist"> 
+                        ♡ 
+                    </button> 
+ 
+                </div> 
+ 
+ 
+                <p class="product-category"> 
+                    SKINCARE 
+                </p> 
+ 
+                <h3> 
+                    Glow Face Serum 
+                </h3> 
+             
+ 
+                <p class="rating"> 
+                    ⭐ 4.6 
+                </p> 
+ 
+ 
+                <div class="price"> 
+ 
+                    <span class="current-price"> 
+                        ₹699 
+                    </span> 
+ 
+                    <span class="old-price"> 
+                        ₹820 
+                    </span> 
+ 
+                </div> 
+ 
+ 
+                <button class="bag-button"> 
+                    Add to Bag 
+                </button> 
+ 
+            </div> 
+ 
+ 
+            <!-- PRODUCT 3 --> 
+ 
+            <div 
+                class="product-card" 
+                data-category="skincare" 
+                 onclick="window.location.href='product.html?id=facewash'"
+            > 
+ 
+                <div class="product-image"> 
+ 
+                    <img 
+                        class="product-emoji" 
+                        src="image/facewash.jpg" 
+                        alt="Gentle Face Wash" 
+                    > 
+ 
+                    <span class="discount"> 
+                        10% OFF 
+                    </span> 
+ 
+                    <button class="wishlist"> 
+                        ♡ 
+                    </button> 
+ 
+                </div> 
+ 
+ 
+                <p class="product-category"> 
+                    SKINCARE 
+                </p> 
+ 
+                <h3> 
+                    Gentle Face Wash 
+                </h3> 
+              
+ 
+                <p class="rating"> 
+                    ⭐ 4.4 
+                </p> 
+ 
+ 
+                <div class="price"> 
+ 
+                    <span class="current-price"> 
+                        ₹349 
+                    </span> 
+ 
+                    <span class="old-price"> 
+                        ₹399 
+                    </span> 
+ 
+                </div> 
+ 
+ 
+                <button class="bag-button"> 
+                    Add to Bag 
+                </button> 
+ 
+            </div> 
+ 
+ 
+            <!-- PRODUCT 4 --> 
+ 
+            <div 
+                class="product-card" 
+                data-category="haircare" 
+                onclick="window.location.href='product.html?id=haircare'"
+            > 
+ 
+                <div class="product-image"> 
+ 
+                    <img 
+                        class="product-emoji" 
+                        src="image/haircare.jpg" 
+                        alt="Hair Care Kit" 
+                    > 
+ 
+                    <span class="discount"> 
+                        25% OFF 
+                    </span> 
+ 
+                    <button class="wishlist"> 
+                        ♡ 
+                    </button> 
+ 
+                </div> 
+ 
+ 
+                <p class="product-category"> 
+                    HAIRCARE 
+                </p> 
+ 
+                <h3> 
+                    Hair Care Kit 
+                </h3> 
+              
+ 
+                <p class="rating"> 
+                    ⭐ 4.7 
+                </p> 
+ 
+ 
+                <div class="price"> 
+ 
+                    <span class="current-price"> 
+                        ₹799 
+                    </span> 
+ 
+                    <span class="old-price"> 
+                        ₹999 
+                    </span> 
+ 
+                </div> 
+ 
+ 
+                <button class="bag-button"> 
+                    Add to Bag 
+                </button> 
+ 
+            </div> 
+ 
+ 
+        </div> 
+ 
+ 
+        <button class="view-all"> 
+            View All Products 
+        </button> 
+ 
+    </section> 
+ 
+ 
+    <!-- ================= NEW OFFER ================= --> 
+ 
+    <section id="offer" class="offer"> 
+ 
+        <div class="offer-content"> 
+ 
+            <p class="offer-small"> 
+                ✨ GLOW & SAVE ✨ 
+            </p> 
+ 
+            <h2> 
+                Beauty Essentials at Special Prices 
+            </h2> 
+ 
+            <p> 
+                Discover your favourite makeup, skincare 
+                and haircare products with exclusive offers. 
+            </p> 
+ 
+            <button class="offer-button"> 
+                Explore Offers 
+            </button> 
+ 
+        </div> 
+ 
+    </section> 
+ 
+ 
+    <!-- ================= FOOTER ================= --> 
+ 
+    <footer class="footer"> 
+ 
+        <div class="footer-content"> 
+ 
+ 
+            <!-- BRAND --> 
+ 
+            <div class="footer-brand"> 
+ 
+                <h2> 
+                    GlowCart 
+                </h2> 
+ 
+                <p> 
+                    Your everyday destination for 
+                    makeup, skincare & haircare. 
+                </p> 
+ 
+            </div> 
+ 
+ 
+            <!-- EXPLORE --> 
+ 
+            <div class="footer-section"> 
+ 
+                <h3> 
+                    Explore 
+                </h3> 
+ 
+                <a href="#home"> 
+                    Home 
+                </a> 
+ 
+                <a href="#products"> 
+                    Shop 
+                </a> 
+ 
+                <a href="#products"> 
+                    New Arrivals 
+                </a> 
+ 
+                <a href="#offer"> 
+                    Offers 
+                </a> 
+ 
+            </div> 
+ 
+ 
+            <!-- CATEGORIES --> 
+ 
+            <div class="footer-section"> 
+ 
+                <h3> 
+                    Categories 
+                </h3> 
+ 
+                <a href="#products"> 
+                    Makeup 
+                </a> 
+ 
+                <a href="#products"> 
+                    Skincare 
+                </a> 
+ 
+                <a href="#products"> 
+                    Haircare 
+                </a> 
+ 
+                <a href="#products"> 
+                    Fragrance 
+                </a> 
+ 
+            </div> 
+ 
+ 
+            <!-- CUSTOMER CARE --> 
+ 
+            <div class="footer-section"> 
+ 
+                <h3> 
+                    Customer Care 
+                </h3> 
+ 
+                <a href="#"> 
+                    Help Center 
+                </a> 
+ 
+                <a href="#"> 
+                    Shipping 
+                </a> 
+ 
+                <a href="#"> 
+                    Returns 
+                </a> 
+ 
+                <a href="#"> 
+                    Contact Us 
+                </a> 
+ 
+            </div> 
+ 
+ 
+            <!-- SOCIAL --> 
+ 
+            <div class="footer-section"> 
+ 
+                <h3> 
+                    Follow Us 
+                </h3> 
+ 
+                <p> 
+                    Instagram 
+                </p> 
+ 
+                <p> 
+                    YouTube 
+                </p> 
+ 
+                <p> 
+                    Pinterest 
+                </p> 
+ 
+            </div> 
+ 
+ 
+            <!-- COPYRIGHT --> 
+ 
+            <div class="copyright"> 
+ 
+                © 2026 GlowCart. 
+                All rights reserved. 
+ 
+            </div> 
+ 
+ 
+        </div> 
+ 
+    </footer> 
+ 
+ 
+    <!-- ================= CART OVERLAY ================= --> 
+ 
+    <div 
+        id="cartOverlay" 
+        class="cart-overlay"> 
+    </div> 
+ 
+ 
+    <!-- ================= CART PANEL ================= --> 
+ 
+    <aside 
+        id="cartPanel" 
+        class="cart-panel"> 
+ 
+ 
+        <div class="cart-header"> 
+ 
+            <h2> 
+                My Bag 
+            </h2> 
+ 
+            <button id="closeCart"> 
+                ✕ 
+            </button> 
+ 
+        </div> 
+ 
+ 
+        <div 
+            id="cartItems" 
+            class="cart-items"> 
+ 
+ 
+            <div class="empty-cart"> 
+ 
+                <div> 
+                    🛒 
+                </div> 
+ 
+                <h3> 
+                    Your bag is empty 
+                </h3> 
+ 
+                <p> 
+                    Add products to your bag 
+                </p> 
+ 
+            </div> 
+ 
+ 
+        </div> 
+ 
+ 
+        <div class="cart-footer"> 
+ 
+            <div class="cart-total"> 
+ 
+                <span> 
+                    Total 
+                </span> 
+ 
+                <strong id="cartTotal"> 
+                    ₹0 
+                </strong> 
+ 
+            </div> 
+ 
+ 
+            <button id="checkoutButton"> 
+                Proceed to Checkout 
+            </button> 
+ 
+        </div> 
+ 
+ 
+    </aside> 
+ 
+ 
+    <!-- ================= JAVASCRIPT ================= --> 
+ 
+    <script src="script.js"></script> 
+ 
+</body> 
+ 
+</html>
